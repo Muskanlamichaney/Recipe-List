@@ -1,0 +1,63 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipe list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Recipe Book</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <h1>Recipe List</h1>
+    <div class="container">
+    <form id="RegForm">
+        <p>
+            <label for="recipe">Add a New Recipe</label>
+            <input type="text" id="recipe" name="Recipe" placeholder="Recipe Title">
+            <span id="recipe-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="ingredient"></label>
+            <input type="text" id="ingredient" name="ingredient" placeholder="Add Ingredient">
+            <span id="ingredient-error" class="error-message"></span>
+        </p>
+        <p>
+            <label for="instruction"></label>
+            <input type="text" id="instruction" name="instruction" placeholder="Add Instruction">
+            <span id="instruction-error" class="error-message"></span>
+        </p>
+      
+      
+            <input type="button" value="Add" onclick="validateForm()">
+            <input type="reset" value="Redo" name="Reset">
+        </p>
+    </form>
+
+    <table id="dataTable">
+        <tbody><tr>
+            <th>RECIPE</th>
+            <th>INGREDIENT</th>
+            <th>INSTRUCTION</th>
+        </tr>
+    </tbody></table>
+
+   
+</div>
+    <script src="script.js"></script>
+
+
+</body></html>
